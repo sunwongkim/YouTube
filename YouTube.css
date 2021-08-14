@@ -1,0 +1,154 @@
+* {
+  /* box-sizing: border-box; */
+  /* border: 1px solid blue; */
+  /* margin: 0px; */
+  /* padding: 0px; */
+}
+body {
+  margin: 0px;
+  /* width: 100vh; */
+  /* height: 100vh; */
+}
+section,
+footer {
+  margin-left: 20px;
+}
+
+/* herader */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+.header__text {
+  font-weight: bold;
+  padding-left: 4px;
+}
+.header__left {
+  display: flex;
+  padding-left: 24px;
+}
+.header__logo {
+  color: red;
+  font-size: 30px;
+}
+.header__right {
+  display: flex;
+  list-style: none;
+  margin: 5px;
+}
+.header__right * {
+  margin: 5px;
+}
+/* video */
+iframe {
+  width: 100%;
+}
+/* stiky 옵션
+header {
+  position: sticky;
+  top: 0px;
+} */
+
+/* section */
+.section__hashtag {
+  display: flex;
+  list-style: none;
+  color: blue;
+  padding-left: 0px;
+}
+.section__hashtag li {
+  margin-right: 20px;
+}
+.section__info {
+  color: gray;
+  margin-bottom: 40px;
+}
+.section__icon {
+  display: flex;
+  justify-content: space-around;
+  color: gray;
+  font-size: 20px;
+}
+
+.section__man {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.section__man__leftSide {
+  display: flex;
+  align-content: center;
+}
+.section__man__leftSide * {
+  padding: 4px;
+}
+.section__man__leftSide__face {
+  width: 70px;
+}
+.section__man__leftSide__text {
+  display: flex;
+  flex-direction: column;
+}
+.section__man__leftSide__text__name {
+  font-size: 20px;
+}
+.section__man__leftSide__text__people {
+  color: gray;
+}
+.section__man__button {
+  color: white;
+  font-size: 18px;
+  background-color: crimson;
+  width: 80px;
+  padding: 10px;
+  margin: 20px;
+  border: 0px;
+}
+
+/* footer */
+.footer__upNext {
+  color: gray;
+  margin: 20px;
+}
+.footer__list {
+  display: flex;
+}
+/* .footer__list__video {
+  width: 50%;
+  margin: 10px;
+}
+.footer__list__text {
+  width: 50%;
+} */
+.footer__list__video {
+  width: 300px;
+  height: 100%;
+  margin: 10px;
+}
+.footer__list__text__title {
+  font-size: 18px;
+  /* width: 300px; */
+  /* 임시 해결 */
+  /* word-break: break-all; */
+}
+.footer__list__text__sub {
+  color: gray;
+}
+
+@media (min-width: 800px) {
+  .midea__down {
+    display: flex;
+  }
+  section,
+  footer {
+    flex-grow: 1;
+
+    /* flex-basis: auto; */
+  }
+}
