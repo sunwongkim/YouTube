@@ -7,80 +7,89 @@
     <link rel="stylesheet" href="YouTube.css" />
     <title>YouTube</title>
   </head>
-
   <body>
-    <header>
+    <!-- 왼쪽 사이드 플렉스 -->
+    <div class="left-side">
+      <!-- 헤더 시작 -->
+    <header class="header">
       <div class="header__left">
-        <i class="fab fa-youtube header__logo"></i>
+        <i class="header__logo fab fa-youtube"></i>
         <span class="header__text">YouTube</span>
       </div>
-      <ul class="header__right">
-        <li><i class="fas fa-ellipsis-v ellipsis icon"></i></li>
-        <li><i class="fas fa-search search icon"></i></li>
-      </ul>
+      <div class="header__right">
+        <i class="header__item fas fa-ellipsis-v ellipsis icon"></i>
+        <i class="header__item fas fa-search search icon"></i>
+      </div>
     </header>
+    <!-- 헤더 끝 -->
 
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/wDT1wwhDtvg"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+    <!-- 동영상 -->
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/wDT1wwhDtvg"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
 
-    <div class="midea__down">
-      <section>
-        <ul class="section__hashtag">
-          <li>#YouTube</li>
-          <li>#Persona</li>
-          <li>#morgana</li>
-        </ul>
-        <h1 class="section__title">Persona 5 - Official Morgana Trailer (English)</h1>
-        <p class="section__info">This page applied midea query</p>
-        <p class="section__icon">
-          <i class="fas fa-thumbs-up"></i>
-          <i class="fas fa-thumbs-down"></i>
-          <i class="fas fa-share"></i>
-          <i class="fas fa-plus"></i>
-          <i class="fas fa-flag"></i>
-        </p>
-        <div class="section__man">
-          <div class="section__man__leftSide">
-            <img class="section__man__leftSide__face" src="https://pbs.twimg.com/media/ET-fXBUWAAcWWSj?format=jpg&name=medium" alt="maker" />
-            <div class="section__man__leftSide__text">
-              <span class="section__man__leftSide__text__name">morgana</span>
-              <span class="section__man__leftSide__text__people">구독자 10만명</span>
-            </div>
+    <!-- 정보창 시작 -->
+    <section class="section">
+      <ul class="section__hashtag">
+        <li class="section__hashtag--item">#YouTube</li>
+        <li class="section__hashtag--item">#Persona</li>
+        <li class="section__hashtag--item">#morgana</li>
+      </ul>
+      <h1 class="section__title">Persona 5 - Official Morgana Trailer (English)</h1>
+      <p class="section__explain">This page applied midea query</p>
+      <span class="section__icon">
+        <i class="fas fa-thumbs-up"></i>
+        <i class="fas fa-thumbs-down"></i>
+        <i class="fas fa-share"></i>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-flag"></i>
+      </span>
+      <div class="section__youtuber-info">
+        <div class="youtuber">
+          <img class="youtuber__face" src="https://pbs.twimg.com/media/ET-fXBUWAAcWWSj?format=jpg&name=medium" alt="maker" />
+          <div class="youtuber__info">
+            <span class="youtuber__name">morgana</span>
+            <span class="youtuber__people">구독자 10만명</span>
           </div>
-          <button class="section__man__button">구독</button>
         </div>
-      </section>
+        <button class="subscription">구독</button>
+      </div>
+    </section>
+    <!-- 정보창 끝 -->
+    </div>
+    <!-- 왼쪽 사이드 플렉스 끝 -->
 
-      <footer>
-        <p class="footer__upNext">Up next</p>
+    <!-- 푸터 시작 -->
+    <footer>
+        <p class="footer__Up-Next">Up Next</p>
         <div class="footer__list">
-          <img class="footer__list__video" src="https://images.pushsquare.com/6a5d74ed6b27d/persona-5-royal-ps4-theme-5.original.jpg" alt="persona" />
-          <div class="footer__list__text">
-            <p class="footer__list__text__title">Persona 5 The Royal Morgana Special Theme And Avatar Set</p>
-            <p class="footer__list__text__sub">
+          <img class="footer__video"  src="https://images.pushsquare.com/6a5d74ed6b27d/persona-5-royal-ps4-theme-5.original.jpg" alt="persona" />
+          <div class="footer__video-info">
+            <p class="footer__title">Persona 5 The Royal Morgana Special Theme And Avatar Set</p>
+            <p class="footer__explain">
               morgana <br />
               조회수 1만회 ⦁ 1개월 전
             </p>
           </div>
         </div>
         <div class="footer__list">
-          <img class="footer__list__video" src="https://www.playstationlifestyle.net/assets/uploads/2019/05/Persona-5-The-Royal-650x365.jpg" alt="persona" />
-          <div class="footer__list__text">
-            <p class="footer__list__text__title">Persona 5 Morgana Special Dynamic Theme And Avatar Set</p>
-            <p class="footer__list__text__sub">
+          <img class="footer__video" src="https://www.playstationlifestyle.net/assets/uploads/2019/05/Persona-5-The-Royal-650x365.jpg" alt="persona" />
+          <div class="footer__video-info">
+            <p class="footer__title">Persona 5 Morgana Special Dynamic Theme And Avatar Set</p>
+            <p class="footer__explain">
               morgana <br />
               조회수 1만회 ⦁ 1개월 전
             </p>
           </div>
         </div>
       </footer>
+      <!-- 푸터 끝 -->
     </div>
   </body>
 </html>
